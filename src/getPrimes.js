@@ -3,6 +3,8 @@ where n is d input given to the function.*/
 
 'use strict' ;
 
+
+
 function getPrimes(n){
 	let result = [];
 	if (n < 0){
@@ -22,7 +24,9 @@ function getPrimes(n){
 		return result;
 	}//end of else if statement
 	else{
-		for(let i=2; i<=n; i++){
+		result.push(2);
+		result.push(3);
+		for(let i=6; i<=n; i++){
 			if( (n %2==0) || (n%3==0) || (n%5==0) ){
 				continue;
 			}// end of inner if statement
@@ -30,6 +34,10 @@ function getPrimes(n){
 					result.push(i);
 			}//end of inner else statement
 	}//end of for loop
-	}//end of else statement
 	return result;
+	}//end of outter else statement
 }// end of unction
+
+let result = getPreimes(12);
+console.log('When input is 12: '+result);
+//export default getPrimes

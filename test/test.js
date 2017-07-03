@@ -4,7 +4,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-import getPreimes from '../src/getPreimes.js'
+import getPreimes from '../src/getPrimes.js'
 
 describe('Funcntion getPreimes',()=>{
 
@@ -23,11 +23,11 @@ describe('Funcntion getPreimes',()=>{
 		});//end of it block
 		it('Return You can only find prime numbers of an Integer if input is a string',()=>{
 			let result = getPreimes('Hello');
-			assert.equal(result,'Enter a number greater than 2');
+			assert.equal(result,'You can only find prime numbers of an Integer');
 		});//end of it block
 		it('Return You can only find prime numbers of an Integer if input is a string',()=>{
 			let result = getPreimes('45');
-			assert.equal(result,'Enter a number greater than 2');
+			assert.equal(result,'You can only find prime numbers of an Integer');
 		});//end of it block
 	});//end of first test suite
 
@@ -40,7 +40,7 @@ describe('Funcntion getPreimes',()=>{
 			let result = getPreimes(40);
 			assert.equal(result,[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
 		});//end of it block
-		it('Return [2,] if input is 2',()=>{
+		it('Return [2] if input is 2',()=>{
 			let result = getPreimes(2);
 			assert.equal(result,[2]);
 		});//end of it block
