@@ -1,0 +1,20 @@
+{
+  "name": "getprimes",
+  "version": "1.0.0",
+  "description": "This package has a src file that contains a function that returns the prime numbers and a test file that contains files used to test the function.",
+  "main": "src/getPrimes.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Prime-Numbers",
+    "Mocha",
+    "Chai",
+    "JavaScript"
+  ],
+  "author": "Ademola Hussain",
+  "license": "ISC"
+}
