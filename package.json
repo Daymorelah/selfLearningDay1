@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "babel-node src/getPrimes.js",
     "test": "mocha --compilers js:babel-register"
   },
   "keywords": [
